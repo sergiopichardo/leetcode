@@ -56,9 +56,8 @@ ALGORITHM
 
 */
 
-
 // Time complexity: O(N)
-// Space complexity: O(1) 
+// Space complexity: O(1)
 func reverseString(s []byte) []byte {
 	leftPointer := 0
 	rightPointer := len(s) - 1
@@ -83,3 +82,29 @@ func main() {
 	fmt.Println(string(result2))
 }
 
+// Other Solutions
+// Del
+// func reverseString(s []byte)  {
+// 	start, end := 0, len(s) - 1
+
+// 	for start < end {
+// 			s[start], s[end] = s[end], s[start]
+// 			start += 1
+// 			end -= 1
+// 	}
+// }
+
+// Joey
+// func reverseString(s []byte) {
+// 	start := 0
+// 	end := len(s) - 1
+
+// 	for ok := true; ok; ok = (start <= end) {
+// 			temp := s[start]
+// 			s[start] = s[end]
+// 			s[end] = temp
+
+// 			start += 1
+// 			end -= 1
+// 	}
+// }
