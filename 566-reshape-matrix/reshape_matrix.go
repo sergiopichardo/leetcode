@@ -30,7 +30,6 @@ func matrixReshape(mat [][]int, r int, c int) [][]int {
 
 	}
 
-	fmt.Println(resultMatrix)
 	return resultMatrix
 }
 
