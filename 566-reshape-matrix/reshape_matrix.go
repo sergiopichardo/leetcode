@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-type Matrix [][]int
-
 func matrixReshape(mat [][]int, r int, c int) [][]int {
 	matrixRows := len(mat)
 	matrixCols := len(mat[0])
