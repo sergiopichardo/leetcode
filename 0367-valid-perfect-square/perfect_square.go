@@ -42,6 +42,10 @@ Space complexity: O(1)
 //		return false
 //	}
 
+/*
+Time: O(Log N)
+Space: O(1)
+*/
 func isPerfectSquare(num int) bool {
 	high := num
 	low := 1
