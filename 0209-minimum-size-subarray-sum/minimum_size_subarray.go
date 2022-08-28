@@ -28,12 +28,12 @@ anchor / runner (slow / fast pointers)
 
 */
 
-func minSubArrayLen(target int, nums []int) int {
+// func minSubArrayLen(target int, nums []int) int {
 
-}
+// }
 
-func main() {
-	result_1 := minSubArrayLen()
-	result_2 := minSubArrayLen()
-	result_3 := minSubArrayLen()
-}
+// func main() {
+// 	result_1 := minSubArrayLen()
+// 	result_2 := minSubArrayLen()
+// 	result_3 := minSubArrayLen()
+// }
