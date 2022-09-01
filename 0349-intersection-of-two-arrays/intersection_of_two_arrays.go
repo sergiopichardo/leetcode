@@ -61,23 +61,26 @@ import (
 
 // T: O(N + M)
 // S: O(1)
-// func intersection(nums1 []int, nums2 []int) []int {
-// 	counts := make(map[int]bool)
-// 	result := []int{}
+func intersection(nums1 []int, nums2 []int) []int {
+	counts := make(map[int]bool)
+	result := []int{}
 
-// 	for _, num := range nums1 {
-// 		counts[num] = true
-// 	}
-// 	for _, num := range nums2 {
-// 		if counts[num] == true {
-// 			counts[num] = false
-// 			result = append(result, num)
-// 		}
-// 	}
-// 	return result
-// }
+	for _, num := range nums1 {
+		counts[num] = true
+	}
+
+	for _, num := range nums2 {
+		if counts[num] == true {
+			counts[num] = false
+			result = append(result, num)
+		}
+	}
+
+	return result
+}
 
 // Time: O(N Log N + M Log M)
+// Space: O(1)
 func intersection(nums1 []int, nums2 []int) []int {
 	sort.Ints(nums1) // Log N
 	sort.Ints(nums2) // Log M
