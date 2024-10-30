@@ -71,7 +71,7 @@ ALGORITHM
 - return true 
 */
 
-const same = (array_1: number[], array_2: number[]): Boolean => {
+const same_v1 = (array_1: number[], array_2: number[]): Boolean => {
   if (array_1.length !== array_2.length) {
     return false;
   }
@@ -89,24 +89,24 @@ const same = (array_1: number[], array_2: number[]): Boolean => {
 
 const array_1_t1 = [2, 2, 2];
 const array_2_t1 = [4, 4, 4];
-console.log(same(array_1_t1, array_2_t1)); // true
+console.log(same_v1(array_1_t1, array_2_t1)); // true
 
 const array_1_t2 = [1, 2, 3, 4];
 const array_2_t2 = [1, 4, 9, 16, 16];
-console.log(same(array_1_t2, array_2_t2)); // false
+console.log(same_v1(array_1_t2, array_2_t2)); // false
 
 const array_1_t3 = [1, 2, 3, 9];
 const array_2_t3 = [1, 4, 9, 81];
-console.log(same(array_1_t3, array_2_t3)); // true
+console.log(same_v1(array_1_t3, array_2_t3)); // true
 
 const array_1_t4 = [0];
 const array_2_t4 = [0];
-console.log(same(array_1_t4, array_2_t4)); // true
+console.log(same_v1(array_1_t4, array_2_t4)); // true
 
 const array_1_t5 = [1];
 const array_2_t5 = [1];
-console.log(same(array_1_t5, array_2_t5)); // true
+console.log(same_v1(array_1_t5, array_2_t5)); // true
 
 const array_1_t6 = [1, 5, 10];
 const array_2_t6 = [1, 25, 20];
-console.log(same(array_1_t6, array_2_t6)); // false
+console.log(same_v1(array_1_t6, array_2_t6)); // false
