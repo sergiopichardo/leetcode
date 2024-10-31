@@ -83,11 +83,14 @@ const validAnagram = (sourceSequence: string, targetSequence: string) => {
     }, {});
 
   for (let letter of targetSequence) {
-    if (!sourceCounter[letter]) {
+    if (!sourceCounter[letter]) return false;
+    sourceCounter[letter] -= 1;
+  }
+
+  for (let letter of targetSequence) {
+    if (sourceCounter[letter] !== 0) {
       return false;
     }
-
-    sourceCounter[letter] -= 1;
   }
 
   return true;
